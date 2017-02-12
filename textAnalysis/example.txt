@@ -1,0 +1,283 @@
+Input:
+'I am very happy'
+
+Output:
+{
+  "document_tone": {
+    "tone_categories": [
+      {
+        "tones": [
+          {
+            "score": 0.006169,
+            "tone_id": "anger",
+            "tone_name": "Anger"
+          },
+          {
+            "score": 0.008786,
+            "tone_id": "disgust",
+            "tone_name": "Disgust"
+          },
+          {
+            "score": 0.007084,
+            "tone_id": "fear",
+            "tone_name": "Fear"
+          },
+          {
+            "score": 0.973498,
+            "tone_id": "joy",
+            "tone_name": "Joy"
+          },
+          {
+            "score": 0.0179,
+            "tone_id": "sadness",
+            "tone_name": "Sadness"
+          }
+        ],
+        "category_id": "emotion_tone",
+        "category_name": "Emotion Tone"
+      },
+      {
+        "tones": [
+          {
+            "score": 0.0,
+            "tone_id": "analytical",
+            "tone_name": "Analytical"
+          },
+          {
+            "score": 0.97759,
+            "tone_id": "confident",
+            "tone_name": "Confident"
+          },
+          {
+            "score": 0.0,
+            "tone_id": "tentative",
+            "tone_name": "Tentative"
+          }
+        ],
+        "category_id": "language_tone",
+        "category_name": "Language Tone"
+      },
+      {
+        "tones": [
+          {
+            "score": 0.096859,
+            "tone_id": "openness_big5",
+            "tone_name": "Openness"
+          },
+          {
+            "score": 0.264058,
+            "tone_id": "conscientiousness_big5",
+            "tone_name": "Conscientiousness"
+          },
+          {
+            "score": 0.472657,
+            "tone_id": "extraversion_big5",
+            "tone_name": "Extraversion"
+          },
+          {
+            "score": 0.61522,
+            "tone_id": "agreeableness_big5",
+            "tone_name": "Agreeableness"
+          },
+          {
+            "score": 0.104851,
+            "tone_id": "emotional_range_big5",
+            "tone_name": "Emotional Range"
+          }
+        ],
+        "category_id": "social_tone",
+        "category_name": "Social Tone"
+      }
+    ]
+  }
+}
+
+Input:
+'I don't feel so well'
+
+Output:
+{
+  "document_tone": {
+    "tone_categories": [
+      {
+        "category_name": "Emotion Tone",
+        "category_id": "emotion_tone",
+        "tones": [
+          {
+            "tone_name": "Anger",
+            "score": 0.025247,
+            "tone_id": "anger"
+          },
+          {
+            "tone_name": "Disgust",
+            "score": 0.032102,
+            "tone_id": "disgust"
+          },
+          {
+            "tone_name": "Fear",
+            "score": 0.129004,
+            "tone_id": "fear"
+          },
+          {
+            "tone_name": "Joy",
+            "score": 0.202367,
+            "tone_id": "joy"
+          },
+          {
+            "tone_name": "Sadness",
+            "score": 0.678548,
+            "tone_id": "sadness"
+          }
+        ]
+      },
+      {
+        "category_name": "Language Tone",
+        "category_id": "language_tone",
+        "tones": [
+          {
+            "tone_name": "Analytical",
+            "score": 0.0,
+            "tone_id": "analytical"
+          },
+          {
+            "tone_name": "Confident",
+            "score": 0.0,
+            "tone_id": "confident"
+          },
+          {
+            "tone_name": "Tentative",
+            "score": 0.822231,
+            "tone_id": "tentative"
+          }
+        ]
+      },
+      {
+        "category_name": "Social Tone",
+        "category_id": "social_tone",
+        "tones": [
+          {
+            "tone_name": "Openness",
+            "score": 0.00139,
+            "tone_id": "openness_big5"
+          },
+          {
+            "tone_name": "Conscientiousness",
+            "score": 0.265357,
+            "tone_id": "conscientiousness_big5"
+          },
+          {
+            "tone_name": "Extraversion",
+            "score": 0.112758,
+            "tone_id": "extraversion_big5"
+          },
+          {
+            "tone_name": "Agreeableness",
+            "score": 0.648037,
+            "tone_id": "agreeableness_big5"
+          },
+          {
+            "tone_name": "Emotional Range",
+            "score": 0.00474,
+            "tone_id": "emotional_range_big5"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+Input:
+'I am very happy and I don't feel so well.'
+
+Output:
+{
+  "document_tone": {
+    "tone_categories": [
+      {
+        "tones": [
+          {
+            "tone_id": "anger",
+            "tone_name": "Anger",
+            "score": 0.006634
+          },
+          {
+            "tone_id": "disgust",
+            "tone_name": "Disgust",
+            "score": 0.005784
+          },
+          {
+            "tone_id": "fear",
+            "tone_name": "Fear",
+            "score": 0.015558
+          },
+          {
+            "tone_id": "joy",
+            "tone_name": "Joy",
+            "score": 0.818791
+          },
+          {
+            "tone_id": "sadness",
+            "tone_name": "Sadness",
+            "score": 0.199572
+          }
+        ],
+        "category_name": "Emotion Tone",
+        "category_id": "emotion_tone"
+      },
+      {
+        "tones": [
+          {
+            "tone_id": "analytical",
+            "tone_name": "Analytical",
+            "score": 0.0
+          },
+          {
+            "tone_id": "confident",
+            "tone_name": "Confident",
+            "score": 0.618451
+          },
+          {
+            "tone_id": "tentative",
+            "tone_name": "Tentative",
+            "score": 0.0
+          }
+        ],
+        "category_name": "Language Tone",
+        "category_id": "language_tone"
+      },
+      {
+        "tones": [
+          {
+            "tone_id": "openness_big5",
+            "tone_name": "Openness",
+            "score": 0.008449
+          },
+          {
+            "tone_id": "conscientiousness_big5",
+            "tone_name": "Conscientiousness",
+            "score": 0.156975
+          },
+          {
+            "tone_id": "extraversion_big5",
+            "tone_name": "Extraversion",
+            "score": 0.07525
+          },
+          {
+            "tone_id": "agreeableness_big5",
+            "tone_name": "Agreeableness",
+            "score": 0.821926
+          },
+          {
+            "tone_id": "emotional_range_big5",
+            "tone_name": "Emotional Range",
+            "score": 0.000895
+          }
+        ],
+        "category_name": "Social Tone",
+        "category_id": "social_tone"
+      }
+    ]
+  }
+}
+
+
